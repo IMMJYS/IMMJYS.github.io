@@ -1,0 +1,49 @@
+<!DOCTYPE
+    htmlPUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Smart Parking Sytem</title>
+    <meta name="team" content="獎金螢光光">
+    <link rel="shortcut icon" type='image/x-icon' href="car.ico" />
+    <!-- <meta http-equiv="refresh" content="0; url=http://carrrrr.com" /> -->
+</head>
+<link rel="stylesheet" type="text/css" href="carrr.css" />
+
+<body style="background-color:#CCEEFF">
+    <header style="font-size: 50pt; text-align: center;">
+        Smart Parking System
+    </header>
+    <h1 id='msg_box'>Welcome</h1>
+    <!-- <div class="display_box"></div> -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <button href="#" class="butn" id="parking" onclick="PClick()">
+            PARKING🅿️
+        </button>
+        <button href=" #" class="butn" id="get_car" onclick="GClick()">
+            GETCAR🚗..
+        </button>
+    </div>
+    <!-- <canvas id="canvas" width="365" height="550"></canvas> -->
+    <!-- <script type="text/javascript" src="car.js"></script> -->
+    <div id="box" style="display: flex; justify-content: center"></div>
+    <script type="text/javascript">
+        function PClick() {
+            // alert("Please wait...");
+            document.getElementById('msg_box').innerHTML = 'Parking your car...';
+        }
+        function GClick() {
+            document.getElementById('msg_box').innerHTML = 'Picking up your car...';
+        }
+        // $(document).ready(function () {
+        //     var p = $(this).attr('id'); //get id value
+        //     $get("ip address", { pin: p }) //execute get request
+        // });
+    </script>
+    <footer>
+        <p>&copy; 2022 MJ. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
